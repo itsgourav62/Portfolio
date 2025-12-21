@@ -49,19 +49,19 @@
         <header class="s-header">
 
             <div class="header-mobile">
-                <span class="mobile-home-link"><a href="index.html">gourav.</a></span>
                 <a class="mobile-menu-toggle" href=""><span>Menu</span></a>
             </div>
 
             <div class="row wide main-nav-wrap">
                 <nav class="column lg-12 main-nav">
-                    <ul>
-                        <li><a href="index.html" class="home-link">gourav.</a></li>
-                        <li class="current"><a href="#intro" class="smoothscroll">Intro</a></li>
-                        <li><a href="#about" class="smoothscroll">About</a></li>
-                        <li><a href="#works" class="smoothscroll">Works</a></li>
-                        <li><a href="#contact" class="smoothscroll">Say Hello</a></li>
-                    </ul>
+                        <ul>
+                            <li class="current"><a href="#intro" class="smoothscroll">Intro</a></li>
+                            <li><a href="#about" class="smoothscroll">About</a></li>
+                            <li><a href="#skills" class="smoothscroll">Skills</a></li>
+                            <li><a href="#background" class="smoothscroll">Background</a></li>
+                            <li><a href="#works" class="smoothscroll">Works</a></li>
+                            <li><a href="#contact" class="smoothscroll">Say Hello</a></li>
+                        </ul>
                 </nav>
             </div>
 
@@ -80,17 +80,25 @@
                 <div class="row intro-content wide">
 
                     <div class="column">
-                        <div class="text-pretitle with-line">
-                            Hello World
+                        <div class="text-pretitle with-line" data-animate-el style="animation-delay:0.12s;">
+                            Associate Software Engineer — Backend (Java, Spring Boot)
                         </div>
 
-                        <h1 class="text-huge-title">
-                            I am Gourav Shaw<br>
-                            decoding the digital world<br>
-                            Welcome to my matrix.
+                        <h1 class="text-huge-title" data-animate-el style="animation-delay:0.22s;">
+                            Designing and shipping robust, secure backend platforms<br>
+                            for regulated finance.
                         </h1>
 
+                        <p class="intro-sub" data-animate-el style="animation-delay:0.34s;">
+                            Java • Spring Boot • API Design • Cloud • Docker • CI/CD
+                        </p>
 
+                        <div class="intro-ctas" data-animate-el style="animation-delay:0.46s; margin-top:1.6rem;">
+                            <a href="#contact" class="btn btn--medium">Say Hello</a>
+                            <a href="https://drive.google.com/file/d/1zEj4gThEUm1eqdyqwdM8ihIcct3Rcosi/view?usp=sharing"
+                                class="btn btn--medium" target="_blank" rel="noopener noreferrer"
+                                style="margin-left:12px;">Download CV</a>
+                        </div>
                     </div>
 
                     <ul class="intro-social">
@@ -137,11 +145,7 @@
                                 About
                             </h2>
                             <p class="attention-getter" data-animate-el>
-                                Skilled in Java, Spring Boot, Angular, and SQL, I’ve contributed to enterprise systems
-                                and open-source projects like GirlScript Winter of Contributing. My portfolio includes
-                                projects in online banking, facial recognition, and dynamic web apps.
-                                I’m passionate about building efficient software and exploring global opportunities in
-                                tech.
+                                Associate Software Engineer focused on backend systems using Java and Spring Boot. At SLK (supporting Fifth Third Bank) I modernize legacy Java applications to Spring Boot microservices, design secure REST APIs, and improve reliability through observability and automated testing. I collaborate with product, QA and SRE teams to deliver production-ready services and strengthen CI/CD and security practices.
                             </p>
                             <a href="https://drive.google.com/file/d/1zEj4gThEUm1eqdyqwdM8ihIcct3Rcosi/view?usp=sharing"
                                 class="btn btn--medium u-fullwidth" data-animate-el target="_blank"
@@ -154,86 +158,30 @@
                 </div>
                 <!-- about-info -->
 
-                <div class="row about-skills" data-animate-block>
-
-                    <!-- COLUMN 1 -->
-                    <div class="column lg-6 tab-12">
-                        <h2 class="text-pretitle" data-animate-el>Technical Skills</h2>
-                
-                        <div class="timeline" data-animate-el>
-                
-                            <div class="timeline__block">
-                                
-                                <div class="timeline__header">
-                                    <h4 class="timeline__title">Frontend</h4>
-                                </div>
-                                <div class="timeline__desc">
-                                    <p>Angular, JavaScript, TypeScript, HTML, CSS, Bootstrap</p>
-                                </div>
-                            </div>
-                
-                            <div class="timeline__block">
-                               
-                                <div class="timeline__header">
-                                    <h4 class="timeline__title">Programming Languages</h4>
-                                </div>
-                                <div class="timeline__desc">
-                                    <p>Java, C, C++, Python, Dart</p>
-                                </div>
-                            </div>
-                
-                            <div class="timeline__block">
-                                
-                                <div class="timeline__header">
-                                    <h4 class="timeline__title">Tools & Technologies</h4>
-                                </div>
-                                <div class="timeline__desc">
-                                    <p>Git, GitHub, Postman, JUnit, VS Code, Eclipse</p>
-                                </div>
-                            </div>
-                
-                        </div> <!-- end timeline -->
+                <div id="skills" class="row about-skills" data-animate-block>
+                    <div class="column lg-12">
+                        <h2 class="text-pretitle" data-animate-el>Skills</h2>
                     </div>
-                
-                    <!-- COLUMN 2 -->
-                    <div class="column lg-6 tab-12">
-                        <h2 class="text-pretitle" data-animate-el>&nbsp;</h2> <!-- for symmetry -->
-                
-                        <div class="timeline" data-animate-el>
-                
-                            <div class="timeline__block">
-                                
-                                <div class="timeline__header">
-                                    <h4 class="timeline__title">Backend</h4>
-                                </div>
-                                <div class="timeline__desc">
-                                    <p>Java, Spring Boot, JDBC, REST APIs</p>
-                                </div>
-                            </div>
-                
-                            <div class="timeline__block">
-                                
-                                <div class="timeline__header">
-                                    <h4 class="timeline__title">Database</h4>
-                                </div>
-                                <div class="timeline__desc">
-                                    <p>MySQL, SQL</p>
-                                </div>
-                            </div>
-                
-                            <div class="timeline__block">
-                                
-                                <div class="timeline__header">
-                                    <h4 class="timeline__title">Other Skills</h4>
-                                </div>
-                                <div class="timeline__desc">
-                                    <p>Multithreading, Lambda Expressions, Custom Exceptions, OOP Concepts, Agile Methodologies</p>
-                                </div>
-                            </div>
-                
-                        </div> <!-- end timeline -->
+                    <div class="column lg-4 md-12">
+                        <h4 class="h6">Core Backend</h4>
+                        <p>Java (8–21), Spring Boot, REST APIs, Microservices, JDBC, JPA, SOAP/WSDL, Multithreading</p>
                     </div>
-                
+                    <div class="column lg-4 md-12">
+                        <h4 class="h6">DevOps & Tools</h4>
+                        <p>Jenkins, Docker, Git, GitHub, HashiCorp Vault, JFrog Artifactory</p>
+                    </div>
+                    <div class="column lg-4 md-12">
+                        <h4 class="h6">Databases</h4>
+                        <p>PostgreSQL, MySQL, MongoDB</p>
+                    </div>
+                    <div class="column lg-6 md-12">
+                        <h4 class="h6">Practices & Security</h4>
+                        <p>Secure Coding, SAST/SCA Compliance, JUnit Testing, CI/CD, Agile/Scrum</p>
+                    </div>
+                    <div class="column lg-6 md-12">
+                        <h4 class="h6">Frontend</h4>
+                        <p>Angular, JavaScript, TypeScript, HTML, CSS</p>
+                    </div>
                 </div> <!-- end about-skills -->
                 
                 
@@ -242,10 +190,10 @@
 
                 <div class="row about-timelines" data-animate-block>
 
-                    <!-- EXPERIENCE SECTION -->
-                    <div class="column lg-6 tab-12">
+                    <!-- BACKGROUND SECTION -->
+                    <div id="background" class="column lg-12">
                         <h2 class="text-pretitle" data-animate-el>
-                            Experience
+                            Background
                         </h2>
 
                         <div class="timeline" data-animate-el>
@@ -253,27 +201,16 @@
                             <div class="timeline__block">
                                 <div class="timeline__bullet"></div>
                                 <div class="timeline__header">
-                                    <h4 class="timeline__title">SLK Software</h4>
-                                    <h5 class="timeline__meta">Software Engineer Trainee</h5>
-                                    <p class="timeline__timeframe">December 2024 – Present</p>
+                                    <h4 class="timeline__title">Associate Software Engineer | Backend (Java & Spring Boot)</h4>
+                                    <h5 class="timeline__meta">Enterprise Banking Systems — Fifth Third Bank (via SLK)</h5>
+                                    <p class="timeline__timeframe">2025 – Present</p>
                                 </div>
                                 <div class="timeline__desc">
-                                    <p>Working on backend development for Fifth Third Bank’s CES application, a legacy
-                                        Java 8 monolith using Spring. Collaborated with banking clients on Java-based
-                                        solutions and contributed to enhancing enterprise systems.</p>
-                                </div>
-                            </div>
-
-                            <div class="timeline__block">
-                                <div class="timeline__bullet"></div>
-                                <div class="timeline__header">
-                                    <h4 class="timeline__title">CSRBOX</h4>
-                                    <h5 class="timeline__meta">Data Analyst Intern</h5>
-                                    <p class="timeline__timeframe">June 2023 – August 2023</p>
-                                </div>
-                                <div class="timeline__desc">
-                                    <p>Worked on data-driven insights and visualizations. Assisted in preparing
-                                        analytical reports for social impact projects using tools like Excel and SQL.
+                                    <p>
+                                        Backend engineer contributing to production-grade enterprise banking systems. My work focuses on modernizing legacy Java applications, improving API reliability, and strengthening security and testing practices across core banking workflows.
+                                    </p>
+                                    <p>
+                                        Key contributions include migrating Java applications to Spring Boot and Java 21, modernizing SOAP/WSDL services, resolving SAST/SCA security issues, writing JUnit tests for internal integrations, and supporting CI/CD pipelines using Jenkins and Docker.
                                     </p>
                                 </div>
                             </div>
@@ -281,13 +218,38 @@
                             <div class="timeline__block">
                                 <div class="timeline__bullet"></div>
                                 <div class="timeline__header">
-                                    <h4 class="timeline__title">GirlScript Winter of Contributing</h4>
-                                    <h5 class="timeline__meta">Open Source Contributor</h5>
+                                    <h4 class="timeline__title">Software Engineer Trainee</h4>
+                                    <h5 class="timeline__meta">SLK — Fifth Third Bank</h5>
+                                    <p class="timeline__timeframe">2024 – 2025</p>
+                                </div>
+                                <div class="timeline__desc">
+                                    <p>
+                                        Worked on enterprise banking applications under senior engineers, supporting backend modernization, API updates, testing, and defect resolution using Spring Boot. Gained hands-on experience with large-scale Java systems and production workflows.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <h4 class="timeline__title">Data Analyst Intern</h4>
+                                    <h5 class="timeline__meta">CSRBOX</h5>
+                                    <p class="timeline__timeframe">Jun 2023 – Aug 2023</p>
+                                </div>
+                                <div class="timeline__desc">
+                                    <p>Supported data-driven insights and reporting for social impact projects using Excel and SQL.</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <h4 class="timeline__title">Open Source Contributor</h4>
+                                    <h5 class="timeline__meta">GirlScript Winter of Contributing</h5>
                                     <p class="timeline__timeframe">2022</p>
                                 </div>
                                 <div class="timeline__desc">
-                                    <p>Contributed to open-source educational content in the field of web development.
-                                        Enhanced collaborative skills and source control proficiency with GitHub.</p>
+                                    <p>Contributed to open-source educational content in web development, collaborating through GitHub.</p>
                                 </div>
                             </div>
 
@@ -295,7 +257,7 @@
                     </div>
 
                     <!-- EDUCATION SECTION -->
-                    <div class="column lg-6 tab-12">
+                    <div class="column lg-12">
                         <h2 class="text-pretitle" data-animate-el>
                             Education
                         </h2>
@@ -305,15 +267,12 @@
                             <div class="timeline__block">
                                 <div class="timeline__bullet"></div>
                                 <div class="timeline__header">
-                                    <h4 class="timeline__title">Dr. Sudhir Chandra Sur Institute of Technology & Sports
-                                        Complex</h4>
-                                    <h5 class="timeline__meta">B.Tech in Computer Science & Engineering</h5>
-                                    <p class="timeline__timeframe">2020 – 2024</p>
+                                    <h4 class="timeline__title">Bachelor of Technology (B.Tech) in Computer Science & Engineering</h4>
+                                    <h5 class="timeline__meta">Dr. Sudhir Chandra Sur Institute of Technology & Sports Complex</h5>
+                                    <p class="timeline__timeframe">2020 – 2024 | CGPA: 8.71</p>
                                 </div>
                                 <div class="timeline__desc">
-                                    <p>Graduated with a CGPA of 8.71. Gained experience in full-stack development, DBMS,
-                                        operating systems, and machine learning. Built several academic and personal
-                                        projects.</p>
+                                    <p>Graduated with a CGPA of 8.71. Gained experience in full-stack development, DBMS, operating systems, and machine learning. Built several academic and personal projects.</p>
                                 </div>
                             </div>
 
@@ -505,6 +464,25 @@
                                 </a>
                             </li> <!--end folio-list__item -->
 
+                            <li class="folio-list__item column" data-animate-el>
+                                <a class="folio-list__item-link" href="#modal-06">
+                                    <div class="folio-list__item-pic">
+                                        <img src="https://media1.tenor.com/m/HnurQKt7zSQAAAAd/jim-carrey-jim-carrey-typing.gif" alt="JobHunterBot CLI">
+                                    </div>
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            CLI Automation
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            JobHunterBot — Automated Job Search
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="folio-list__proj-link" href="https://github.com/itsgourav62/JobHunterBot" title="project link" target="_blank" rel="noopener noreferrer">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                                </a>
+                            </li> <!--end folio-list__item -->
+
                         </ul> <!-- end folio-list -->
 
                     </div> <!-- end column -->
@@ -520,16 +498,12 @@
 
 
                             <div class="modal-popup__desc">
-                                <h5>QwikPay Full Stack Application</h5>
+                                <h5>QwikPay — Full Stack Payment Application</h5>
                                 <p>
-                                    Led a 4-member team, reviewed 10+ PRs, contributed 50%+ of total commits, and
-                                    ensured smooth Git workflows across frontend & backend repos.
-                                    Built a secure digital payment app in a 4-member team, handling 15+ REST APIs,
-                                    JWT-based auth, and a responsive Angular frontend used in 20+ simulated
-                                    transactions.
+                                    Led a 4-member team to build a secure payment platform from the ground up. Architected and implemented 15+ REST APIs with JWT-based authentication, solving the need for a reliable and secure transaction system. Reviewed all production-ready PRs.
                                 </p>
                                 <ul class="modal-popup__cat">
-                                    <li>Capstone Project</li>
+                                    <li>Tech: Java, Spring Boot, Angular, JWT</li>
                                 </ul>
                             </div>
 
@@ -642,6 +616,21 @@
                             link</a>
                     </div>
                 </div> <!-- end modal -->
+                <div id="modal-06" hidden>
+                    <div class="modal-popup">
+                        <img src="https://media1.tenor.com/m/HnurQKt7zSQAAAAd/jim-carrey-jim-carrey-typing.gif" alt="JobHunterBot CLI">
+                        <div class="modal-popup__desc">
+                            <h5>JobHunterBot — Automated Job Search CLI</h5>
+                            <p>
+                                Built a CLI automation tool to fetch, filter, and schedule job searches using parallel execution and modular scraping pipelines. Solved the problem of manual, time-consuming job searches across multiple platforms.
+                            </p>
+                            <ul class="modal-popup__cat">
+                                <li>Tech: Java, Spring Boot, REST APIs, Multithreading</li>
+                            </ul>
+                        </div>
+                        <a href="https://github.com/itsgourav62/JobHunterBot" class="modal-popup__details" target="_blank" rel="noopener noreferrer">Project Link</a>
+                    </div>
+                </div> <!-- end modal -->
     </div> <!-- end works-portfolio -->
 
 
@@ -650,16 +639,31 @@
             ================================================== -->
     <section id="contact" class="s-contact target-section">
 
-        <div class="column lg-12">
-    <h2 class="text-pretitle">
-        Let's Connect
-    </h2>
+        <div class="row contact-top">
+            <div class="column lg-12">
+                <h2 class="text-pretitle">Let's Connect</h2>
 
-    <p class="h1">
-        Have a question or just want to chat? <br>
-        I'm always open to new opportunities and conversations — don’t hesitate to reach out.
-    </p>
+                <p class="h1">Building secure backend systems with Java & Spring Boot. Open to backend opportunities.</p>
+
+                <a href="#top" class="contact-go-top smoothscroll" title="Back to Top" style="display:inline-block;margin-top:1rem;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 4l-6 8h12l-6-8z" fill="white" />
+                    </svg>
+                </a>
+            </div>
         </div> <!-- end contact-top -->
+
+        <!-- Scoped styles + anchored go-top visible only inside the Contact section -->
+        <style>
+            .s-contact { position: relative; }
+            .s-contact .go-top-fixed { position: absolute; right:2rem; bottom:1.6rem; left:auto; z-index:60; }
+        </style>
+
+        <a href="#top" class="go-top-fixed smoothscroll" aria-label="Back to top">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" width="24" height="24" style="transform:rotate(180deg);">
+                <path d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z" fill="white" />
+            </svg>
+        </a>
 
         <div class="row contact-bottom">
             <div class="column lg-3 md-5 tab-6 stack-on-550 contact-block">
@@ -715,6 +719,8 @@
     ================================================== -->
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+
+    <!-- fixed anchor removed from page bottom; now scoped inside Contact section -->
 
 </body>
 

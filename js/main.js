@@ -332,9 +332,13 @@
 
         const triggers = document.querySelectorAll('.smoothscroll');
         
+        // calculate header height to offset scrolling for fixed header
+        const headerEl = document.querySelector('.s-header');
+        const headerHeight = headerEl ? headerEl.offsetHeight : 0;
+
         const moveTo = new MoveTo({
-            tolerance: 0,
-            duration: 1200,
+            tolerance: headerHeight,
+            duration: 900,
             easing: 'easeInOutCubic',
             container: window
         }, easeFunctions);
