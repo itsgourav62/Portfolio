@@ -21,7 +21,7 @@
     .add({
         targets: '#loader',
         opacity: 0,
-        duration: 1000,
+        duration: 240,
         begin: function(anim) {
             window.scrollTo(0, 0);
         }
@@ -29,6 +29,7 @@
     .add({
         targets: '#preloader',
         opacity: 0,
+        duration: 520,
         complete: function(anim) {
             document.querySelector("#preloader").style.visibility = "hidden";
             document.querySelector("#preloader").style.display = "none";
@@ -82,7 +83,11 @@
                 item.classList.remove('ss-animated');
             });
 
-            tl.play();
+            // Keep the branded intro visible briefly even on a warm cache,
+            // then fade into the existing landing page (no forced long wait).
+            window.setTimeout(function() {
+                tl.play();
+            }, 420);
         });
 
         // force page scroll position to top at page refresh
@@ -348,7 +353,6 @@
         });
 
     }; // end ssMoveTo
-
 
    /* Initialize
     * ------------------------------------------------------ */

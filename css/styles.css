@@ -3385,11 +3385,6 @@ img.u-pull-left {
     align-items : center;
 }
 
-.about-info__pic {
-    object-fit     : cover;
-    margin         : 0;
-    vertical-align : bottom;
-}
 
 .about-info__text {
     padding     : var(--vspace-3_5) 10vw var(--vspace-2) 0;
@@ -3683,10 +3678,10 @@ img.u-pull-left {
  * ------------------------------------------------------------------- */
 
 .s-works {
-    padding-top    : var(--vspace-5);
-    padding-bottom : var(--vspace-3_5);
     padding-top    : var(--vspace-3);
     padding-bottom : var(--vspace-2_5);
+}
+
 .s-works .h1 {
     margin-top : 0;
 }
@@ -4062,7 +4057,6 @@ img.u-pull-left {
 }
 
 @media screen and (max-width: 800px) {
-    .s-works {
     .s-works {
         padding-top    : var(--vspace-4);
         padding-bottom : var(--vspace-3);

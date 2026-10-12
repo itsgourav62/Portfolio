@@ -4,9 +4,10 @@
 <head>
     <!-- Basic Page Needs -->
     <meta charset="utf-8">
-    <title>Gourav Shaw</title>
-    <meta name="description" content="Portfolio of Gourav Shaw">
+    <title>Gourav Shaw | Java Backend Engineer</title>
+    <meta name="description" content="Gourav Shaw is a Java backend engineer working with Java 21, Spring Boot, enterprise API modernization, security, observability, and resilient services.">
     <meta name="author" content="Gourav Shaw">
+    <meta name="theme-color" content="#0b0e13">
 
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,6 +15,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/portfolio-enhancements.css">
 
     <!-- Favicon -->
     <link rel="icon" type="images" href="images/download.png">
@@ -23,10 +25,24 @@
 <body id="top">
 
 
-    <!-- # preloader
-    ================================================== -->
-    <div id="preloader">
-        <div id="loader">
+    <!-- Branded intro loader: overlays the existing landing page, then fades away. -->
+    <div id="preloader" role="status" aria-label="Loading Gourav Shaw's portfolio">
+        <div class="gs-intro-loader">
+            <div class="gs-intro-loader__topline">
+                <span class="gs-intro-loader__monogram">GS<span>.</span></span>
+                <span class="gs-intro-loader__edition">ENGINEERING PORTFOLIO <span> / 2026</span></span>
+            </div>
+
+            <div class="gs-intro-loader__main">
+                <p class="gs-intro-loader__eyebrow">WELCOME TO THE WORKSPACE</p>
+                <h2 class="gs-intro-loader__name">GOURAV SHAW<span class="gs-intro-loader__cursor">_</span></h2>
+                <p class="gs-intro-loader__tagline">Building reliable systems. Solving complex problems.</p>
+            </div>
+
+            <div class="gs-intro-loader__bottomline">
+                <div class="gs-intro-loader__track" aria-hidden="true"><div id="loader"></div></div>
+                <div class="gs-intro-loader__status"><span>INITIALIZING PORTFOLIO</span><span>READY SOON</span></div>
+            </div>
         </div>
     </div>
 
@@ -56,11 +72,12 @@
                 <nav class="column lg-12 main-nav">
                         <ul>
                             <li class="current"><a href="#intro" class="smoothscroll">Intro</a></li>
+                            <li><a href="#impact" class="smoothscroll">Impact</a></li>
                             <li><a href="#about" class="smoothscroll">About</a></li>
                             <li><a href="#skills" class="smoothscroll">Skills</a></li>
-                            <li><a href="#background" class="smoothscroll">Background</a></li>
-                            <li><a href="#works" class="smoothscroll">Works</a></li>
-                            <li><a href="#contact" class="smoothscroll">Say Hello</a></li>
+                            <li><a href="#background" class="smoothscroll">Experience</a></li>
+                            <li><a href="#works" class="smoothscroll">Engineering</a></li>
+                            <li><a href="#contact" class="smoothscroll">Contact</a></li>
                         </ul>
                 </nav>
             </div>
@@ -90,7 +107,7 @@
                         </h1>
 
                         <p class="intro-sub" data-animate-el style="animation-delay:0.34s;">
-                            Java • Spring Boot • API Design • Cloud • Docker • CI/CD
+                            Java 21 • Spring Boot 4 • API Modernization • Security • Resilience
                         </p>
 
                         <div class="intro-ctas" data-animate-el style="animation-delay:0.46s; margin-top:1.6rem;">
@@ -122,33 +139,63 @@
 
             </section> <!-- end s-intro -->
 
+            <!-- Engineering impact: resume-backed metrics -->
+            <section id="impact" class="s-about target-section gs-impact" aria-labelledby="impact-title">
+                <div class="row wide gs-impact__intro" data-animate-block>
+                    <div class="column lg-12">
+                        <p class="gs-eyebrow" data-animate-el>ENGINEERING AT A GLANCE</p>
+                        <h2 id="impact-title" class="gs-section-title" data-animate-el>Experience measured in systems, reliability, and delivery.</h2>
+                        <p class="gs-section-copy" data-animate-el>Selected scale indicators from my enterprise banking modernization and automated testing work.</p>
+                    </div>
+                </div>
+                <div class="row wide gs-impact-grid" data-animate-block>
+                    <div class="column gs-impact-stat" data-animate-el>
+                        <span class="gs-impact-stat__value">72</span>
+                        <span class="gs-impact-stat__label">API endpoints in the credit-card platform</span>
+                    </div>
+                    <div class="column gs-impact-stat" data-animate-el>
+                        <span class="gs-impact-stat__value">64+</span>
+                        <span class="gs-impact-stat__label">Gateway/service implementations worked end-to-end</span>
+                    </div>
+                    <div class="column gs-impact-stat" data-animate-el>
+                        <span class="gs-impact-stat__value">4,000+</span>
+                        <span class="gs-impact-stat__label">JUnit test cases across the testing effort</span>
+                    </div>
+                    <div class="column gs-impact-stat" data-animate-el>
+                        <span class="gs-impact-stat__value">~90%</span>
+                        <span class="gs-impact-stat__label">Unit-test coverage reported for the command layer</span>
+                    </div>
+                    <div class="column gs-impact-stat" data-animate-el>
+                        <span class="gs-impact-stat__value">ALL</span>
+                        <span class="gs-impact-stat__label">Identified SCA vulnerabilities resolved in the Credit Card application</span>
+                    </div>
+                    <div class="column gs-impact-stat" data-animate-el>
+                        <span class="gs-impact-stat__value">~50</span>
+                        <span class="gs-impact-stat__label">SCA vulnerabilities resolved in the OptOut application</span>
+                    </div>
+                </div>
+                <p class="gs-impact-note">Platform scale and testing figures reflect the broader engineering effort. Security-remediation figures reflect the latest project updates.</p>
+            </section>
+
+
 
             <!-- ### about
             ================================================== -->
             <section id="about" class="s-about target-section">
 
                 <div class="row about-info wide" data-animate-block>
-
-                    <!-- Image Column -->
-                    <div class="column lg-6 md-12 about-info__pic-block">
-                        <img src="images/about-photo.jpg"
-                            srcset="images/about-photo.jpg 1x, images/about-photo@2x.jpg 2x"
-                            alt="Gourav Shaw Profile Photo" class="about-info__pic" data-animate-el
-                            style="max-width: 500px; width: 100%; height: auto; display: block; margin: 0 auto;">
-                    </div>
-
-                    <!-- Text Column -->
-                    <div class="column lg-6 md-12">
+                    <!-- Text Column: full-width layout without a portrait -->
+                    <div class="column lg-12">
                         <div class="about-info__text">
 
                             <h2 class="text-pretitle with-line" data-animate-el>
                                 About
                             </h2>
                             <p class="attention-getter" data-animate-el>
-                                Associate Software Engineer focused on backend systems using Java and Spring Boot. At SLK (supporting Fifth Third Bank) I modernize legacy Java applications to Spring Boot microservices, design secure REST APIs, and improve reliability through observability and automated testing. I collaborate with product, QA and SRE teams to deliver production-ready services and strengthen CI/CD and security practices.
+                                I’m a Java backend engineer at Altimetrik (formerly SLK Software), working on enterprise banking applications for Fifth Third Bank. My work spans Java 8-to-21 modernization, Spring Boot services, REST/SOAP integrations, resilient service flows, secure backend components, observability, and automated testing. I enjoy tracing complex production behavior, understanding legacy workflows, and turning that understanding into maintainable backend solutions.
                             </p>
                             <a href="https://drive.google.com/file/d/1Rfqzdl6BHEuHBN1gVcUDr6Ud6U77mhlk/view?usp=sharing"
-                                class="btn btn--medium u-fullwidth" data-animate-el target="_blank"
+                                class="btn btn--medium" data-animate-el target="_blank"
                                 rel="noopener noreferrer">
                                 Download CV
                             </a>
@@ -158,35 +205,36 @@
                 </div>
                 <!-- about-info -->
 
-                <div id="skills" class="row about-skills" data-animate-block>
+                <div id="skills" class="row about-skills gs-skills" data-animate-block>
                     <div class="column lg-12">
+                        <p class="gs-eyebrow" data-animate-el>TECHNICAL TOOLKIT</p>
                         <h2 class="text-pretitle" data-animate-el>Skills</h2>
                     </div>
-                    <div class="column lg-4 md-12">
-                        <h4 class="h6">Core Backend</h4>
-                        <p>Java (8–21), Spring Boot, REST APIs, Microservices, JDBC, JPA, SOAP/WSDL, Multithreading</p>
+                    <div class="column lg-4 md-12 gs-skill-group" data-animate-el>
+                        <h4 class="h6">Backend Engineering</h4>
+                        <p>Java 21, Spring Boot 4, Spring MVC, REST APIs, SOAP/WSDL, JDBC, JMS, JPA, Hibernate</p>
                     </div>
-                    <div class="column lg-4 md-12">
-                        <h4 class="h6">DevOps & Tools</h4>
-                        <p>Jenkins, Docker, Git, GitHub, HashiCorp Vault, JFrog Artifactory</p>
+                    <div class="column lg-4 md-12 gs-skill-group" data-animate-el>
+                        <h4 class="h6">Security & Integration</h4>
+                        <p>OAuth 2.0, Okta, LDAP, RSA encryption/decryption, HashiCorp Vault, secure coding</p>
                     </div>
-                    <div class="column lg-4 md-12">
-                        <h4 class="h6">Databases</h4>
-                        <p>PostgreSQL, MySQL, MongoDB</p>
+                    <div class="column lg-4 md-12 gs-skill-group" data-animate-el>
+                        <h4 class="h6">Reliability & Observability</h4>
+                        <p>Resilience4j, Spring AOP, MDC logging, correlation IDs, Splunk, Dynatrace</p>
                     </div>
-                    <div class="column lg-6 md-12">
-                        <h4 class="h6">Practices & Security</h4>
-                        <p>Secure Coding, SAST/SCA Compliance, JUnit Testing, CI/CD, Agile/Scrum</p>
+                    <div class="column lg-4 md-12 gs-skill-group" data-animate-el>
+                        <h4 class="h6">Testing & Quality</h4>
+                        <p>JUnit, Mockito, SoapUI, SonarQube, SAST/SCA remediation</p>
                     </div>
-                    <div class="column lg-6 md-12">
-                        <h4 class="h6">Frontend</h4>
-                        <p>Angular, JavaScript, TypeScript, HTML, CSS</p>
+                    <div class="column lg-4 md-12 gs-skill-group" data-animate-el>
+                        <h4 class="h6">DevOps & Data</h4>
+                        <p>Gradle, Jenkins, Docker, Red Hat OpenShift, JFrog Artifactory, IBM DB2, MySQL</p>
+                    </div>
+                    <div class="column lg-4 md-12 gs-skill-group" data-animate-el>
+                        <h4 class="h6">Additional Experience</h4>
+                        <p>Angular, TypeScript, JavaScript, HTML/CSS, Git, GitHub, Agile/Scrum</p>
                     </div>
                 </div> <!-- end about-skills -->
-                
-                
-                </div> <!-- end about-expertise -->
-
 
                 <div class="row about-timelines" data-animate-block>
 
@@ -201,17 +249,16 @@
                             <div class="timeline__block">
                                 <div class="timeline__bullet"></div>
                                 <div class="timeline__header">
-                                    <h4 class="timeline__title">Associate Software Engineer | Backend (Java & Spring Boot)</h4>
-                                    <h5 class="timeline__meta">Enterprise Banking Systems — Fifth Third Bank (via SLK)</h5>
-                                    <p class="timeline__timeframe">2025 – Present</p>
+                                    <h4 class="timeline__title">Associate Software Engineer | Java Backend</h4>
+                                    <h5 class="timeline__meta">Altimetrik (formerly SLK Software) · Enterprise banking client</h5>
+                                    <p class="timeline__timeframe">Jan 2026 – Present</p>
                                 </div>
                                 <div class="timeline__desc">
-                                    <p>
-                                        Backend engineer contributing to production-grade enterprise banking systems. My work focuses on modernizing legacy Java applications, improving API reliability, and strengthening security and testing practices across core banking workflows.
-                                    </p>
-                                    <p>
-                                        Key contributions include migrating Java applications to Spring Boot and Java 21, modernizing SOAP/WSDL services, resolving SAST/SCA security issues, writing JUnit tests for internal integrations, and supporting CI/CD pipelines using Jenkins and Docker.
-                                    </p>
+                                    <p>Contributing to modernization of enterprise banking applications from legacy Java architecture to Java 21 and Spring Boot 4, including backend APIs, business logic, integration processing, testing, and deployment support.</p>
+                                    <p>Reworked command flows into gateway/service layers, processed SOAP requests and responses, replaced tightly coupled Hystrix flows with Resilience4j circuit breakers and fallbacks, and implemented reusable exception-handling and observability improvements.</p>
+                                    <p>Implemented RSA encryption/decryption utilities with HashiCorp Vault, contributed to 4,000+ JUnit test cases and ~90% unit-test coverage in the relevant layer, and supported Jenkins, Gradle, Docker, and OpenShift delivery workflows.</p>
+                                    <p>Security remediation across applications: resolved all identified SCA vulnerabilities in the Credit Card application and approximately 50 SCA vulnerabilities in the OptOut application.</p>
+                                    <p>For CSA Auth, worked on MQ connectivity by gathering cipher-suite and SSL-certificate details needed to establish an active JMS connection for publishing OTP messages through the Alerts Engine.</p>
                                 </div>
                             </div>
 
@@ -219,13 +266,11 @@
                                 <div class="timeline__bullet"></div>
                                 <div class="timeline__header">
                                     <h4 class="timeline__title">Software Engineer Trainee</h4>
-                                    <h5 class="timeline__meta">SLK — Fifth Third Bank</h5>
-                                    <p class="timeline__timeframe">2024 – 2025</p>
+                                    <h5 class="timeline__meta">SLK Software · Enterprise banking client</h5>
+                                    <p class="timeline__timeframe">Dec 2024 – Dec 2025</p>
                                 </div>
                                 <div class="timeline__desc">
-                                    <p>
-                                        Worked on enterprise banking applications under senior engineers, supporting backend modernization, API updates, testing, and defect resolution using Spring Boot. Gained hands-on experience with large-scale Java systems and production workflows.
-                                    </p>
+                                    <p>Contributed to Java and Spring backend components, API enhancements, SOAP/REST integration workflows, unit testing, defect resolution, and CI/CD support for enterprise banking applications.</p>
                                 </div>
                             </div>
 
@@ -311,328 +356,163 @@
             </section> <!-- end s-about -->
 
 
-            <!-- ### works
+            <!-- ### selected engineering work
             ================================================== -->
-            <section id="works" class="s-works target-section">
+            <section id="works" class="s-works target-section gs-works">
+                <div class="row wide gs-works-heading" data-animate-block>
+                    <div class="column lg-12">
+                        <p class="gs-eyebrow" data-animate-el>SELECTED ENGINEERING WORK</p>
+                        <h2 class="gs-section-title" data-animate-el>Complex systems. Practical engineering.</h2>
+                        <p class="gs-section-copy" data-animate-el>Enterprise modernization work first, then a small selection of personal projects that show how I build.</p>
+                    </div>
+                </div>
 
+                <div id="case-studies" class="row wide gs-case-study-grid" data-animate-block>
+                    <article class="column lg-12 gs-case-study gs-case-study--featured" data-animate-el>
+                        <div class="gs-case-study__topline">
+                            <span class="gs-case-study__index">CASE STUDY 01</span>
+                            <span class="gs-case-study__kind">ENTERPRISE BACKEND MODERNIZATION</span>
+                        </div>
+                        <h3 class="gs-case-study__title">Credit Card Platform Modernization</h3>
+                        <p class="gs-case-study__lede">Contributed to modernizing a 72-endpoint enterprise credit-card platform, moving legacy Java components toward Java 21 and Spring Boot 4 while preserving established business workflows.</p>
 
-                <div class="row works-portfolio">
-
-                    <div class="column lg-12" data-animate-block>
-
-                        <h2 class="text-pretitle" data-animate-el>
-                            Recent Works
-                        </h2>
-                        <p class="h1" data-animate-el>
-                            Here are some of my projects I have done lately. Feel free to check them out.
-                        </p>
-
-                        <ul class="folio-list row block-lg-one-half block-stack-on-1000">
-
-                            <li class="folio-list__item column" data-animate-el>
-                                <a class="folio-list__item-link" href="#modal-01">
-                                    <div class="folio-list__item-pic">
-                                        <img src="https://design4users.com/wp-content/uploads/2018/01/home_budget_app_dashboard_animation_tubik.gif"
-                                            srcset="https://design4users.com/wp-content/uploads/2018/01/home_budget_app_dashboard_animation_tubik.gif"
-                                            alt="">
-                                    </div>
-
-                                    <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
-                                            Caspstone Project
-                                        </div>
-                                        <div class="folio-list__item-title">
-                                            QwikPay Full Stack Payment Application
-                                        </div>
-                                    </div>
-                                </a>
-                                <a class="folio-list__proj-link" href="#" title="project link">
-                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
-                                            fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
-                                    </svg>
-                                </a>
-                            </li> <!--end folio-list__item -->
-
-                            <li class="folio-list__item column" data-animate-el>
-                                <a class="folio-list__item-link" href="#modal-02">
-                                    <div class="folio-list__item-pic">
-                                        <img src="https://www.altoros.com/blog/wp-content/uploads/2018/08/multimodal-sentiment-analasis-with-tensorflow-v1.gif"
-                                            srcset="https://www.altoros.com/blog/wp-content/uploads/2018/08/multimodal-sentiment-analasis-with-tensorflow-v1.gif"
-                                            alt="Amazon Product Review Analysis">
-                                    </div>
-
-                                    <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
-                                            Project
-                                        </div>
-                                        <div class="folio-list__item-title">
-                                            Amazon Product Review Analysis
-                                        </div>
-                                    </div>
-                                </a>
-                                <a class="folio-list__proj-link" href="#" title="project link">
-                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
-                                            fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
-                                    </svg>
-                                </a>
-                            </li> <!--end folio-list__item -->
-
-                            <li class="folio-list__item column" data-animate-el>
-                                <a class="folio-list__item-link" href="#modal-03">
-                                    <div class="folio-list__item-pic">
-                                        <img src="https://learnopencv.com/wp-content/uploads/2023/08/test4-multi.gif"
-                                            srcset="https://learnopencv.com/wp-content/uploads/2023/08/test4-multi.gif"
-                                            alt="Multi Tasking Facial Expression Recognition">
-                                    </div>
-
-                                    <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
-                                            Project
-                                        </div>
-                                        <div class="folio-list__item-title">
-                                            RealTime Facial Expression Recognition System
-                                        </div>
-                                    </div>
-                                </a>
-                                <a class="folio-list__proj-link" href="#" title="project link">
-                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
-                                            fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
-                                    </svg>
-                                </a>
-                            </li> <!--end folio-list__item -->
-
-                            <li class="folio-list__item column" data-animate-el>
-                                <a class="folio-list__item-link" href="#modal-04">
-                                    <div class="folio-list__item-pic">
-                                        <img src="https://media1.popsugar-assets.com/files/thumbor/HpBWkGT-6KaqCiNiiL2mgYqKU-0/fit-in/728xorig/filters:format_auto-!!-:strip_icc-!!-/2014/04/01/828/n/1922283/f613349e106a081f_tumblr_mirascWSBe1qj0hr7o4_500/i/Goliath-National-Bank.gif"
-                                            srcset="https://media1.popsugar-assets.com/files/thumbor/HpBWkGT-6KaqCiNiiL2mgYqKU-0/fit-in/728xorig/filters:format_auto-!!-:strip_icc-!!-/2014/04/01/828/n/1922283/f613349e106a081f_tumblr_mirascWSBe1qj0hr7o4_500/i/Goliath-National-Bank.gif"
-                                            alt="Goliath-National-Bank">
-                                    </div>
-
-                                    <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
-                                            Website
-                                        </div>
-                                        <div class="folio-list__item-title">
-                                            Goliath National Bank
-                                        </div>
-                                    </div>
-                                </a>
-                                <a class="folio-list__proj-link" href="#" title="project link">
-                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
-                                            fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
-                                    </svg>
-                                </a>
-                            </li> <!--end folio-list__item -->
-
-                            <li class="folio-list__item column" data-animate-el>
-                                <a class="folio-list__item-link" href="#modal-05">
-                                    <div class="folio-list__item-pic">
-                                        <img src="https://i.giphy.com/12W5Sg2koWYnwA.webp"
-                                            srcset="https://i.giphy.com/12W5Sg2koWYnwA.webp"
-                                            alt="Terminal-Based Application">
-                                    </div>
-
-                                    <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
-                                            Terminal-Based Application
-                                        </div>
-                                        <div class="folio-list__item-title">
-                                            AestheticsClub
-                                        </div>
-                                    </div>
-                                </a>
-                                <a class="folio-list__proj-link" href="#" title="project link">
-                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
-                                            fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
-                                    </svg>
-                                </a>
-                            </li> <!--end folio-list__item -->
-
-                            <li class="folio-list__item column" data-animate-el>
-                                <a class="folio-list__item-link" href="#modal-06">
-                                    <div class="folio-list__item-pic">
-                                        <img src="https://media1.tenor.com/m/HnurQKt7zSQAAAAd/jim-carrey-jim-carrey-typing.gif" alt="JobHunterBot CLI">
-                                    </div>
-                                    <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
-                                            CLI Automation
-                                        </div>
-                                        <div class="folio-list__item-title">
-                                            JobHunterBot — Automated Job Search
-                                        </div>
-                                    </div>
-                                </a>
-                                <a class="folio-list__proj-link" href="https://github.com/itsgourav62/JobHunterBot" title="project link" target="_blank" rel="noopener noreferrer">
-                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
-                                </a>
-                            </li> <!--end folio-list__item -->
-
-                        </ul> <!-- end folio-list -->
-
-                    </div> <!-- end column -->
-
-
-                    <!-- Modal Templates Popup
-                    -------------------------------------------- -->
-                    <div id="modal-01" hidden>
-                        <div class="modal-popup">
-                            <img src="https://design4users.com/wp-content/uploads/2018/01/home_budget_app_dashboard_animation_tubik.gif"
-                                srcset="https://design4users.com/wp-content/uploads/2018/01/home_budget_app_dashboard_animation_tubik.gif"
-                                alt="QwikPay Full Stack Application">
-
-
-                            <div class="modal-popup__desc">
-                                <h5>QwikPay — Full Stack Payment Application</h5>
-                                <p>
-                                    Led a 4-member team to build a secure payment platform from the ground up. Architected and implemented 15+ REST APIs with JWT-based authentication, solving the need for a reliable and secure transaction system. Reviewed all production-ready PRs.
-                                </p>
-                                <ul class="modal-popup__cat">
-                                    <li>Tech: Java, Spring Boot, Angular, JWT</li>
+                        <div class="gs-architecture" aria-label="Illustrative backend architecture">
+                            <div class="gs-architecture__node"><span class="gs-architecture__node-label">INTERFACES</span><strong>REST APIs / SOAP</strong></div>
+                            <span class="gs-architecture__connector" aria-hidden="true">→</span>
+                            <div class="gs-architecture__node gs-architecture__node--primary"><span class="gs-architecture__node-label">SERVICE LAYER</span><strong>Java 21 · Spring Boot 4</strong></div>
+                            <span class="gs-architecture__connector" aria-hidden="true">→</span>
+                            <div class="gs-architecture__node"><span class="gs-architecture__node-label">INTEGRATION</span><strong>JDBC · JMS · DB2</strong></div>
+                        </div>
+                        <div class="gs-case-study__columns">
+                            <div>
+                                <h4>What I worked on</h4>
+                                <ul>
+                                    <li>Gateway/service implementations across 64+ integrations, including REST flows and SOAP request/response processing.</li>
+                                    <li>Migration of tightly coupled command flows and replacement of Hystrix patterns with Resilience4j circuit breakers and fallbacks.</li>
+                                    <li>Lost/Stolen, Remove Deceased, and Authorized User workflow fixes, using logs, payload analysis, and database validation.</li>
                                 </ul>
                             </div>
-
-                            <!-- GitHub links at the bottom -->
                             <div>
-                                <a href="https://github.com/itsgourav62/CapstoneProject-Frontend"
-                                    class="modal-popup__details" target="_blank">Frontend Repo</a>
-                                <a href="https://github.com/itsgourav62/CapstoneProject-API"
-                                    class="modal-popup__details" target="_blank" style="margin-left: 200px;">Backend
-                                    Repo</a>
+                                <h4>Engineering foundations</h4>
+                                <ul>
+                                    <li>Correlation IDs, MDC logging, and reusable observability improvements to trace requests and downstream calls.</li>
+                                    <li>Secure backend utilities using RSA encryption/decryption and HashiCorp Vault.</li>
+                                    <li>Resolved all identified SCA vulnerabilities in the Credit Card application.</li>
+                                    <li>JUnit/Mockito testing, quality remediation, and support for Gradle, Jenkins, Docker, and OpenShift workflows.</li>
+                                </ul>
                             </div>
                         </div>
-                    </div>
-
-
-                </div> <!-- end modal -->
-
-                <div id="modal-02" hidden>
-                    <div class="modal-popup">
-                        <img src="https://learnopencv.com/wp-content/uploads/2023/08/test4-multi.gif" alt="">
-
-                        <div class="modal-popup__desc">
-                            <h5>Amazon Product Review Sentiment Analysis</h5>
-                            <p>
-                                Built a sentiment analysis model using Python, NLP techniques, and scikit-learn to
-                                classify Amazon product reviews as positive or negative with 90%+ accuracy.
-                                Performed data cleaning, vectorization (TF-IDF), and applied classification algorithms
-                                like Logistic Regression and SVM, followed by detailed performance evaluation.
-                            </p>
-
-
-                            <ul class="modal-popup__cat">
-                                <li>Project</li>
-                            </ul>
+                        <div class="gs-tech-tags" aria-label="Technologies used">
+                            <span>Java 21</span><span>Spring Boot 4</span><span>REST / SOAP</span><span>Resilience4j</span><span>JDBC / JMS</span><span>IBM DB2</span><span>Splunk</span>
                         </div>
+                        <p class="gs-case-study__disclaimer">Public summary of my contributions; internal architecture, source code, and proprietary system identifiers are intentionally omitted.</p>
+                    </article>
 
-                        <a href="https://github.com/ethan-x11/Review-Reflector" class="modal-popup__details"
-                            target="_blank">Project link</a>
-                    </div>
-                </div> <!-- end modal -->
-
-                <div id="modal-03" hidden>
-                    <div class="modal-popup">
-                        <img src="https://www.altoros.com/blog/wp-content/uploads/2018/08/multimodal-sentiment-analasis-with-tensorflow-v1.gif"
-                            alt="">
-
-                        <div class="modal-popup__desc">
-                            <h5>Real-Time Facial Expression Recognition System</h5>
-                            <p>
-                                Built a real-time facial expression recognition system using Python, OpenCV, CNN, and
-                                FER2013 dataset with 85%+ accuracy.
-                                Trained and evaluated deep learning models for 7 emotion classes, deployed live
-                                webcam-based detection, and visualized performance metrics to validate model
-                                reliability.
-                            </p>
-                            <ul class="modal-popup__cat">
-                                <li>Project</li>
-                            </ul>
+                    <article class="column lg-6 gs-case-study" data-animate-el>
+                        <div class="gs-case-study__topline">
+                            <span class="gs-case-study__index">CASE STUDY 02</span>
+                            <span class="gs-case-study__kind">AUTHENTICATION MODERNIZATION</span>
                         </div>
-
-                        <a href="https://github.com/ethan-x11/Facial-Expression-Recognition"
-                            class="modal-popup__details" target="_blank">Project link</a>
-                    </div>
-                </div> <!-- end modal -->
-
-                <div id="modal-04" hidden>
-                    <div class="modal-popup">
-                        <img src="https://media1.popsugar-assets.com/files/thumbor/HpBWkGT-6KaqCiNiiL2mgYqKU-0/fit-in/728xorig/filters:format_auto-!!-:strip_icc-!!-/2014/04/01/828/n/1922283/f613349e106a081f_tumblr_mirascWSBe1qj0hr7o4_500/i/Goliath-National-Bank.gif"
-                            alt="">
-
-                        <div class="modal-popup__desc">
-                            <h5>Goliath-National-Bank</h5>
-                            <p>
-                                Designed and implemented a Java-based console banking simulation system demonstrating
-                                core OOP principles, exception handling, and file I/O.
-                                Enabled functionalities such as account creation, transaction history, and fund
-                                transfers while ensuring a menu-driven, user-friendly experience.
-                            </p>
-                            <ul class="modal-popup__cat">
-                                <li>Website</li>
-                            </ul>
+                        <h3 class="gs-case-study__title">Transaction Authentication Modernization</h3>
+                        <p class="gs-case-study__lede">Contributing to a lift-and-shift modernization of an OTP-based transaction-authentication application from Spring MVC/REST toward Spring Boot, with an emphasis on preserving behavior while decoupling legacy modules.</p>
+                        <div class="gs-case-study__mini-points">
+                            <p><strong>Modernization:</strong> incremental migration with minimal functional changes.</p>
+                            <p><strong>Security:</strong> HashiCorp Vault integration for secrets/configuration.</p>
+                            <p><strong>MQ / JMS connectivity:</strong> worked on collecting cipher-suite and SSL-certificate details to establish an active JMS connection.</p>
+                            <p><strong>OTP delivery:</strong> the connection supports publishing OTP messages through the Alerts Engine.</p>
+                            <p><strong>Delivery:</strong> support for deployment to Red Hat OpenShift.</p>
                         </div>
+                        <div class="gs-tech-tags"><span>Spring MVC</span><span>Spring Boot</span><span>MQ / JMS</span><span>Cipher Suite</span><span>SSL Certificate</span><span>Vault</span><span>OpenShift</span></div>
+                    </article>
 
-                        <a href="https://itsgourav62.github.io/GNB/index.html" class="modal-popup__details"
-                            target="_blank">Project link</a>
-                    </div>
-                </div> <!-- end modal -->
-
-                <div id="modal-05" hidden>
-                    <div class="modal-popup">
-
-                        <img src="https://i.giphy.com/12W5Sg2koWYnwA.webp" alt="Terminal-Based Application">
-
-                        <div class="modal-popup__desc">
-                            <h5>AestheticsClub</h5>
-                            <p>
-                                Developed a Java-based terminal app to manage sports club facilities, bookings, and
-                                memberships with complete admin and user roles.
-                                Implemented MySQL integration with JDBC, used multithreading for concurrent user session
-                                management, and lambda expressions for optimized operations. Added custom exceptions and
-                                unit testing with JUnit for better reliability and maintainability.
-                            </p>
-
-                            <ul class="modal-popup__cat">
-                                <li>Terminal-Based Application</li>
-                            </ul>
+                    <article class="column lg-6 gs-case-study" data-animate-el>
+                        <div class="gs-case-study__topline">
+                            <span class="gs-case-study__index">CASE STUDY 03</span>
+                            <span class="gs-case-study__kind">APPLICATION SECURITY</span>
                         </div>
-
-                        <a href="https://github.com/itsgourav62/AestheticsClub" class="modal-popup__details">Project
-                            link</a>
-                    </div>
-                </div> <!-- end modal -->
-                <div id="modal-06" hidden>
-                    <div class="modal-popup">
-                        <img src="https://media1.tenor.com/m/HnurQKt7zSQAAAAd/jim-carrey-jim-carrey-typing.gif" alt="JobHunterBot CLI">
-                        <div class="modal-popup__desc">
-                            <h5>JobHunterBot — Automated Job Search CLI</h5>
-                            <p>
-                                Built a CLI automation tool to fetch, filter, and schedule job searches using parallel execution and modular scraping pipelines. Solved the problem of manual, time-consuming job searches across multiple platforms.
-                            </p>
-                            <ul class="modal-popup__cat">
-                                <li>Tech: Java, Spring Boot, REST APIs, Multithreading</li>
-                            </ul>
+                        <h3 class="gs-case-study__title">OptOut Application — SCA Remediation</h3>
+                        <p class="gs-case-study__lede">Owned security-remediation work in the OptOut application, resolving approximately 50 identified Software Composition Analysis (SCA) vulnerabilities.</p>
+                        <div class="gs-case-study__mini-points">
+                            <p><strong>Remediation:</strong> resolved approximately 50 identified SCA vulnerabilities.</p>
+                            <p><strong>Focus:</strong> improving the application's dependency-security posture as part of ongoing maintenance.</p>
                         </div>
-                        <a href="https://github.com/itsgourav62/JobHunterBot" class="modal-popup__details" target="_blank" rel="noopener noreferrer">Project Link</a>
-                    </div>
-                </div> <!-- end modal -->
-    </div> <!-- end works-portfolio -->
+                        <div class="gs-tech-tags"><span>SCA Remediation</span><span>Dependency Security</span><span>Backend Maintenance</span></div>
+                    </article>
 
+                    <article class="column lg-6 gs-case-study gs-case-study--principles" data-animate-el>
+                        <div class="gs-case-study__topline">
+                            <span class="gs-case-study__index">ENGINEERING PRACTICE</span>
+                            <span class="gs-case-study__kind">CROSS-APPLICATION IMPROVEMENTS</span>
+                        </div>
+                        <h3 class="gs-case-study__title">Make production behavior easier to understand.</h3>
+                        <p class="gs-case-study__lede">Reusable improvements adopted across 10+ applications focused on reducing ambiguity during deployment checks and incident investigation.</p>
+                        <div class="gs-case-study__mini-points">
+                            <p><strong>Version visibility:</strong> dynamic artifact versioning exposed through Swagger/OpenAPI.</p>
+                            <p><strong>Request tracing:</strong> MDC logging and correlation IDs to follow API requests and downstream calls.</p>
+                            <p><strong>Quality:</strong> unit testing and SonarQube remediation as part of delivery.</p>
+                        </div>
+                        <div class="gs-tech-tags"><span>Swagger / OpenAPI</span><span>MDC</span><span>Correlation IDs</span><span>JUnit</span></div>
+                    </article>
+                </div>
+
+                <div class="row wide gs-personal-heading" data-animate-block>
+                    <div class="column lg-12">
+                        <p class="gs-eyebrow" data-animate-el>PERSONAL PROJECTS</p>
+                        <h3 class="gs-personal-heading__title" data-animate-el>Smaller builds, real implementation work.</h3>
+                    </div>
+                </div>
+
+                <div class="row works-portfolio wide">
+                    <div class="column lg-12" data-animate-block>
+                        <ul class="folio-list row block-lg-one-half block-stack-on-1000 gs-project-list">
+                            <li class="folio-list__item column" data-animate-el>
+                                <a class="folio-list__item-link" href="#modal-01" aria-haspopup="dialog">
+                                    <div class="folio-list__item-pic"><div class="gs-project-visual gs-project-visual--qwikpay" aria-hidden="true"><span class="gs-project-visual__code">PAYMENTS / API</span><strong>QWIK<span>PAY</span></strong><div class="gs-project-visual__chips"><i>JWT</i><i>REST</i><i>SPRING</i></div><div class="gs-project-visual__bars"><b></b><b></b><b></b><b></b></div></div></div>
+                                    <div class="folio-list__item-text"><div class="folio-list__item-cat">Full-stack payment application</div><div class="folio-list__item-title">QwikPay</div></div>
+                                </a>
+                                <a class="folio-list__proj-link" href="https://github.com/itsgourav62/CapstoneProject-API" title="QwikPay backend repository" aria-label="QwikPay backend repository" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">↗</span></a>
+                            </li>
+                            <li class="folio-list__item column" data-animate-el>
+                                <a class="folio-list__item-link" href="#modal-02" aria-haspopup="dialog">
+                                    <div class="folio-list__item-pic"><div class="gs-project-visual gs-project-visual--jobhunter" aria-hidden="true"><span class="gs-project-visual__code">JOB SEARCH / CLI</span><strong>JobHunter<span>Bot</span></strong><div class="gs-project-visual__terminal"><span>$ fetch --jobs</span><span>✓ parse listings</span><span>✓ filter & schedule</span><span class="gs-terminal-cursor">_</span></div></div></div>
+                                    <div class="folio-list__item-text"><div class="folio-list__item-cat">Automation · Java</div><div class="folio-list__item-title">JobHunterBot</div></div>
+                                </a>
+                                <a class="folio-list__proj-link" href="https://github.com/itsgourav62/JobHunterBot" title="JobHunterBot repository" aria-label="JobHunterBot repository" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">↗</span></a>
+                            </li>
+                            <li class="folio-list__item column" data-animate-el>
+                                <a class="folio-list__item-link" href="#modal-03" aria-haspopup="dialog">
+                                    <div class="folio-list__item-pic"><div class="gs-project-visual gs-project-visual--aesthetics" aria-hidden="true"><span class="gs-project-visual__code">CLUB MANAGEMENT</span><strong>Aesthetics<span>Club</span></strong><div class="gs-project-visual__terminal"><span>members.load()</span><span>bookings.sync()</span><span>roles.validate()</span></div></div></div>
+                                    <div class="folio-list__item-text"><div class="folio-list__item-cat">Java · JDBC · MySQL</div><div class="folio-list__item-title">AestheticsClub</div></div>
+                                </a>
+                                <a class="folio-list__proj-link" href="https://github.com/itsgourav62/AestheticsClub" title="AestheticsClub repository" aria-label="AestheticsClub repository" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">↗</span></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Project detail panels used by the existing lightbox behavior. -->
+                    <div id="modal-01" hidden>
+                        <div class="modal-popup gs-project-modal" role="dialog" aria-modal="true">
+                            <div class="gs-project-visual gs-project-visual--qwikpay" aria-hidden="true"><span class="gs-project-visual__code">PAYMENTS / API</span><strong>QWIK<span>PAY</span></strong><div class="gs-project-visual__chips"><i>JWT</i><i>REST</i><i>SPRING</i></div><div class="gs-project-visual__bars"><b></b><b></b><b></b><b></b></div></div>
+                            <div class="modal-popup__desc"><h5>QwikPay — Full-stack Payment Application</h5><p>Built as part of a four-member team, QwikPay includes 15+ REST APIs and JWT-based authentication for digital payment workflows. My contribution focused on backend APIs and full-stack integration.</p><ul class="modal-popup__cat"><li>Java</li><li>Spring Boot</li><li>Angular</li><li>JWT</li></ul></div>
+                            <div class="gs-project-modal__links"><a href="https://github.com/itsgourav62/CapstoneProject-Frontend" class="modal-popup__details" target="_blank" rel="noopener noreferrer">Frontend repository ↗</a><a href="https://github.com/itsgourav62/CapstoneProject-API" class="modal-popup__details" target="_blank" rel="noopener noreferrer">Backend repository ↗</a></div>
+                        </div>
+                    </div>
+                    <div id="modal-02" hidden>
+                        <div class="modal-popup gs-project-modal" role="dialog" aria-modal="true">
+                            <div class="gs-project-visual gs-project-visual--jobhunter" aria-hidden="true"><span class="gs-project-visual__code">JOB SEARCH / CLI</span><strong>JobHunter<span>Bot</span></strong><div class="gs-project-visual__terminal"><span>$ fetch --jobs</span><span>✓ parse listings</span><span>✓ filter & schedule</span><span class="gs-terminal-cursor">_</span></div></div>
+                            <div class="modal-popup__desc"><h5>JobHunterBot — Automated Job Search</h5><p>A modular Java application designed to aggregate, filter, and process job listings with REST API integrations and multithreaded execution, reducing repetitive manual searching.</p><ul class="modal-popup__cat"><li>Java</li><li>Spring Boot</li><li>REST APIs</li><li>Multithreading</li></ul></div>
+                            <div class="gs-project-modal__links"><a href="https://github.com/itsgourav62/JobHunterBot" class="modal-popup__details" target="_blank" rel="noopener noreferrer">View repository ↗</a></div>
+                        </div>
+                    </div>
+                    <div id="modal-03" hidden>
+                        <div class="modal-popup gs-project-modal" role="dialog" aria-modal="true">
+                            <div class="gs-project-visual gs-project-visual--aesthetics" aria-hidden="true"><span class="gs-project-visual__code">CLUB MANAGEMENT</span><strong>Aesthetics<span>Club</span></strong><div class="gs-project-visual__terminal"><span>members.load()</span><span>bookings.sync()</span><span>roles.validate()</span></div></div>
+                            <div class="modal-popup__desc"><h5>AestheticsClub</h5><p>A Java terminal application for sports-club facilities, bookings, and membership administration. It uses JDBC/MySQL, role-based flows, multithreading, custom exceptions, and JUnit tests.</p><ul class="modal-popup__cat"><li>Java</li><li>JDBC</li><li>MySQL</li><li>JUnit</li></ul></div>
+                            <div class="gs-project-modal__links"><a href="https://github.com/itsgourav62/AestheticsClub" class="modal-popup__details" target="_blank" rel="noopener noreferrer">View repository ↗</a></div>
+                        </div>
+                    </div>
+                </div>
+            </section> <!-- end works -->
 
 
     <!-- ### contact
@@ -643,7 +523,7 @@
             <div class="column lg-12">
                 <h2 class="text-pretitle">Let's Connect</h2>
 
-                <p class="h1">Building secure backend systems with Java & Spring Boot. Open to backend opportunities.</p>
+                <p class="h1">I’m open to Java backend opportunities where I can work on reliable services, thoughtful modernization, and production-grade engineering.</p>
 
             </div>
         </div> <!-- end contact-top -->
@@ -692,14 +572,13 @@
 
         <div class="row">
             <div class="column ss-copyright">
-                <span>©2025</span>
+                <span>©2026 Gourav Shaw</span>
             </div>
         </div>
 
     </footer> <!-- end s-footer -->
 
     </div> <!-- end -s-pagewrap -->
-
 
     <!-- Java Script
     ================================================== -->
